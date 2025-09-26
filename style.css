@@ -1,13 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: inter , sans-serif;
+    font-family: inter, sans-serif;
 }
 
-body{
-    .container{
-  
+body {
+    background-image: linear-gradient(to left, #87EFF6, #FFFFFF);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+
+    & .nav {
+        display: flex;
+        gap: 50px;
+
+        & a {
+            color: black;
+            text-decoration: none;
+        }
     }
 
+    .menu {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 80px;
+
+        & .ladoesquerdo {
+            width: 604px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            & .conteudo {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                & p:first-child {
+                    color: red;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+
+            }
+        }
+    }
 }
